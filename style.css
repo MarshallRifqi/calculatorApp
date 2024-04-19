@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background-color: #563727;
+    position: sticky;
+    top: 0;
+}
+
+header{
+    display: inline;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 1rem 2rem;
+    margin: 0;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #fff;
+    margin-inline: 2rem;
+}
+
+nav ul a:hover{
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+main{
+    padding: 2rem;
+}
+
+
+#judul-product{
+    /* margin-top: 1rem; */
+    /* padding: .3rem; */
+    text-transform: uppercase;
+    text-align: center;
+}
+#judul-product > h2{
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* margin-top: 1rem; */
+}
+
+.card > img {
+    /* height: 200px; */
+    object-fit: cover;
+    object-position: center; 
+    width: 100%;
+    border: 3px solid #e1e1e1;
+    border-radius: 10px;
+}
+
+.card{
+    margin-inline: 1rem;
+    padding: 6px;
+    width: 400px;
+    /* flex-grow: 1; */
+}
+
+.card > p{
+    color: #666;
+}
+
+.card > button{
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-color: #000;
+    border: 2px solid #563727;
+    cursor: pointer;
+}
+
+.card > button:hover{
+    color: white;
+    background-color: #563727;
+    transition: all ;
+    transition: all .2s ease-in-out;
+}
+
+#data-display{
+    text-align: justify;
+    /* text-indent: 1rem; */
+    line-height: 2em;
+    margin-top: 20px;
+}
+
+
+footer{
+    background-color: #563727;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > p{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 440px){
+    nav ul{
+        flex-flow: column nowrap;
+        gap: 10px;
+    }   
+    /* .opening-content-image > img{
+        width: 200px;
+    }  */
+}
+
+
+
+
+
